@@ -1,0 +1,9 @@
+flask
+Flask-BasicAuth
+Flask-APScheduler
+bs4
+html5lib
+pymysql
+environs
+python-dotenv-vault==0.4.1
+requests
