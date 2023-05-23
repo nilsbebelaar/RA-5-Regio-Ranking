@@ -1,5 +1,6 @@
 import atletieknu
 
+
 # Function for running this file standalone for testing
 if __name__ == '__main__':
     from dotenv import load_dotenv
