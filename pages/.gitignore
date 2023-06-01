@@ -3,5 +3,5 @@ node_modules*
 package-lock.json
 package.json
 wrangler.toml
-set_data.js
+set.js
 commands.md

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>5-Regio 2023</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <h1>Hieronder komen de puntentelling per regio te staan.</h1>
+    <p>Onderstaande tabel wordt asynchroon geladen uit een cache zodat m'n server niet dood gaat :)</p>
+    <p>Deze statische pagina host ik ook niet zelf.</p>
+    <p id="content">Als je dit ziet, staat javascript uitgeschakeld in je browser.</p>
+
+    <script>
+        $('#content').load('/data/get/main_ranking');
+    </script>
+
+</body>
+
+</html>
