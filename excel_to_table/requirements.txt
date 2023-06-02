@@ -1,0 +1,5 @@
+jinja2
+environs
+python-dotenv-vault
+minify-html
+openpyxl
