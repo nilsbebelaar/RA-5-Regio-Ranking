@@ -29,7 +29,7 @@ ranking = {
             {'naam': 'U14-M', 'Mannen': worksheet['B10'].value, 'Estafette': worksheet['D10'].value, 'Totaal': worksheet['E10'].value},
             {'naam': 'U16-V', 'Vrouwen': worksheet['C11'].value, 'Estafette': worksheet['D11'].value, 'Totaal': worksheet['E11'].value},
             {'naam': 'U16-M', 'Mannen': worksheet['B12'].value, 'Estafette': worksheet['D12'].value, 'Totaal': worksheet['E12'].value},
-            {'naam': 'Pendelestafette', 'Totaal': worksheet['E14'].value},
+            {'naam': 'Pendel', 'Totaal': worksheet['E14'].value},
         ]
     },
     'Haaglanden': {
@@ -45,7 +45,7 @@ ranking = {
             {'naam': 'U14-M', 'Mannen': worksheet['F10'].value, 'Estafette': worksheet['H10'].value, 'Totaal': worksheet['I10'].value},
             {'naam': 'U16-V', 'Vrouwen': worksheet['G11'].value, 'Estafette': worksheet['H11'].value, 'Totaal': worksheet['I11'].value},
             {'naam': 'U16-M', 'Mannen': worksheet['F12'].value, 'Estafette': worksheet['H12'].value, 'Totaal': worksheet['I12'].value},
-            {'naam': 'Pendelestafette', 'Totaal': worksheet['I14'].value},
+            {'naam': 'Pendel', 'Totaal': worksheet['I14'].value},
         ]
     },
     'Rijnmond': {
@@ -61,7 +61,7 @@ ranking = {
             {'naam': 'U14-M', 'Mannen': worksheet['J10'].value, 'Estafette': worksheet['L10'].value, 'Totaal': worksheet['M10'].value},
             {'naam': 'U16-V', 'Vrouwen': worksheet['K11'].value, 'Estafette': worksheet['L11'].value, 'Totaal': worksheet['M11'].value},
             {'naam': 'U16-M', 'Mannen': worksheet['J12'].value, 'Estafette': worksheet['L12'].value, 'Totaal': worksheet['M12'].value},
-            {'naam': 'Pendelestafette', 'Totaal': worksheet['M14'].value},
+            {'naam': 'Pendel', 'Totaal': worksheet['M14'].value},
         ]
     },
     'West-Brabant': {
@@ -77,7 +77,7 @@ ranking = {
             {'naam': 'U14-M', 'Mannen': worksheet['N10'].value, 'Estafette': worksheet['P10'].value, 'Totaal': worksheet['Q10'].value},
             {'naam': 'U16-V', 'Vrouwen': worksheet['O11'].value, 'Estafette': worksheet['P11'].value, 'Totaal': worksheet['Q11'].value},
             {'naam': 'U16-M', 'Mannen': worksheet['N12'].value, 'Estafette': worksheet['P12'].value, 'Totaal': worksheet['Q12'].value},
-            {'naam': 'Pendelestafette', 'Totaal': worksheet['Q14'].value},
+            {'naam': 'Pendel', 'Totaal': worksheet['Q14'].value},
         ]
     },
     'Zeeland': {
@@ -93,7 +93,7 @@ ranking = {
             {'naam': 'U14-M', 'Mannen': worksheet['R10'].value, 'Estafette': worksheet['T10'].value, 'Totaal': worksheet['U10'].value},
             {'naam': 'U16-V', 'Vrouwen': worksheet['S11'].value, 'Estafette': worksheet['T11'].value, 'Totaal': worksheet['U11'].value},
             {'naam': 'U16-M', 'Mannen': worksheet['R12'].value, 'Estafette': worksheet['T12'].value, 'Totaal': worksheet['U12'].value},
-            {'naam': 'Pendelestafette', 'Totaal': worksheet['U14'].value},
+            {'naam': 'Pendel', 'Totaal': worksheet['U14'].value},
         ]
     },
 }

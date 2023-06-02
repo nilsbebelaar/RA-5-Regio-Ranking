@@ -2,21 +2,20 @@
 <html>
 
 <head>
-    <title>5-Regio 2023</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/static/css/5-regio.css">
+  <title>5-Regio 2023</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/css/5-regio.css">
 </head>
 
 <body>
+  <div class="main-container">
+    <h1 class="title">Puntentelling per regio</h1>
+    <div id="table-loader">Als je dit ziet, staat javascript uitgeschakeld in je browser.</div>
+  </div>
 
-    <h1 class="title">Puntentelling</h1>
-    <p class="subtitle">Hieronder staat de puntentelling per regio.</p>
-    <p id="content">Als je dit ziet, staat javascript uitgeschakeld in je browser.</p>
-
-    <script>
-        $('#content').load('/data/get/main_ranking');
-    </script>
-
+  <script>
+    $('#table-loader').load('/data/get/main_ranking');
+  </script>
 </body>
 
 </html>

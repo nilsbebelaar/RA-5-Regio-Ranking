@@ -1,42 +1,103 @@
 body {
     font-size: 20pt;
     font-family: Ubuntu, "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+    margin: 0px
 }
 
 .title {
-    font-size: 2em;
-    margin: 5px;
-}
-.subtitle{
-    font-size: 1.5em;
-    margin: 5px;
+    font-size: 28pt;
+    margin: 5px 0px;
 }
 
-table.ranking{
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.main-container {
     width: 100%;
-    font-size: 1.5em;
-    border:none
+    max-width: 480px;
+    margin: 0px auto;
 }
 
-table.ranking th{
+table.ranking {
+    width: 100%;
+    border: none
+}
+
+table.ranking th {
     text-align: left;
 }
 
-table.ranking .colored.blue{
+table.ranking tr.colored td:first-of-type,
+table.ranking tr.colored td:last-of-type {
+    text-align: center;
+}
+
+table.ranking tr.detail td {
+    text-align: center;
+}
+table.ranking tr.detail td:first-of-type {
+    text-align: left;
+}
+
+table.ranking tbody tr.detail {
+    font-size: 16pt;
+}
+
+table.ranking tbody tr.colored {
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+table.ranking .colored.blue {
     background-color: blue;
     color: white;
 }
-table.ranking .colored.red{
+
+table.ranking .colored.red {
     background-color: red;
     color: white;
 }
-table.ranking .colored.yellow{
+
+table.ranking .colored.yellow {
     background-color: yellow;
 }
-table.ranking .colored.green{
+
+table.ranking .colored.green {
     background-color: green;
     color: white;
 }
-table.ranking .colored.orange{
+
+table.ranking .colored.orange {
     background-color: orange;
+}
+
+table.ranking .detail.blue {
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+table.ranking .detail.red {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+table.ranking .detail.yellow {
+    background-color: rgba(255, 255, 0, 0.1);
+}
+
+table.ranking .detail.green {
+    background-color: rgba(0, 128, 0, 0.1);
+}
+
+table.ranking .detail.orange {
+    background-color: rgba(255, 166, 0, 0.1);
 }

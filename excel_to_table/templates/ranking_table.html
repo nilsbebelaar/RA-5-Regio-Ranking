@@ -1,52 +1,35 @@
 <table class="ranking">
   <thead>
     <tr>
-      <th colspan="3">Rank</th>
-      <th colspan="3">Naam</th>
-      <th colspan="3">Punten</th>
+      <th>Rank</th>
+      <th colspan="2">Naam</th>
+      <th colspan="2">Punten</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Man.</th>
+      <th>Vrw.</th>
+      <th>Est.</th>
+      <th>Tot.</th>
     </tr>
   </thead>
   <tbody>
     {% for naam, regio in ranking.items() %}
     <tr class="colored {{regio.color}}">
-      <td colspan="3">{{regio.rank}}</td>
-      <td colspan="3">{{naam}}</td>
-      <td colspan="3">{{regio.punten}}</td>
+      <td>{{regio.rank}}</td>
+      <td colspan="2">{{naam}}</td>
+      <td colspan="2">{{regio.punten}}</td>
     </tr>
     {% for d in regio.details %}
     <tr class="detail {{regio.color}}">
       <td>{{d.naam}}</td>
-      {% if d.get('Mannen') is not none %}
-      <td>M: </td>
-      <td>{{d.Mannen}}</td>
-      {% else %}
-      <td></td>
-      <td></td>
-      {% endif %}
-      {% if d.get('Vrouwen') is not none %}
-      <td>V: </td>
-      <td>{{d.Vrouwen}}</td>
-      {% else %}
-      <td></td>
-      <td></td>
-      {% endif %}
-      {% if d.get('Estafette') is not none %}
-      <td>Est.: </td>
-      <td>{{d.Estafette}}</td>
-      {% else %}
-      <td></td>
-      <td></td>
-      {% endif %}
-      {% if d.get('Totaal') is not none %}
-      <td>Tot.: </td>
-      <td>{{d.Totaal}}</td>
-      {% else %}
-      <td></td>
-      <td></td>
-      {% endif %}
+      <td>{% if d.get('Mannen') is not none %}{{d.Mannen}}{% endif %}</td>
+      <td>{% if d.get('Vrouwen') is not none %}{{d.Vrouwen}}{% endif %}</td>
+      <td>{% if d.get('Estafette') is not none %}{{d.Estafette}}{% endif %}</td>
+      <td>{% if d.get('Totaal') is not none %}{{d.Totaal}}{% endif %}</td>
     </tr>
     {% endfor %}
     {% endfor %}
   </tbody>
 </table>
-<i class="update">Laatst geupdate op {{time}}</i>
+<i class="update">Laatste update: {{time}}</i>
