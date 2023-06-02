@@ -1,17 +1,17 @@
 body {
-    font-size: 20pt;
+    font-size: 10pt;
     font-family: Ubuntu, "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
     margin: 0px
 }
 
 .title {
-    font-size: 28pt;
+    font-size: 18pt;
     margin: 5px 0px;
 }
 
 .subtitle {
     margin: 5px 0px;
-    font-size: 16pt;
+    font-size: 10pt;
 }
 
 table {
@@ -31,7 +31,13 @@ table.ranking {
 }
 
 table.ranking th {
+    font-size: 14pt;
     text-align: left;
+}
+
+table.ranking thead tr th:first-of-type,
+table.ranking thead tr th:last-of-type {
+    text-align: center;
 }
 
 table.ranking tr.regio td:first-of-type,
@@ -49,6 +55,7 @@ table.ranking tr.detail.header {
 
 table.ranking tr.detail td {
     width: 15%;
+    line-height: 12pt;
     text-align: center;
 }
 
@@ -57,11 +64,11 @@ table.ranking tr.detail td:first-of-type {
 }
 
 table.ranking tbody tr.detail {
-    font-size: 16pt;
+    font-size: 10pt;
 }
 
 table.ranking tbody tr.regio {
-    font-size: 24pt;
+    font-size: 14pt;
     font-weight: bold;
 }
 
