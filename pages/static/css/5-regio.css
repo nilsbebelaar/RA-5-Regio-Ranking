@@ -9,6 +9,11 @@ body {
     margin: 5px 0px;
 }
 
+.subtitle {
+    margin: 5px 0px;
+    font-size: 16pt;
+}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -29,14 +34,24 @@ table.ranking th {
     text-align: left;
 }
 
-table.ranking tr.colored td:first-of-type,
-table.ranking tr.colored td:last-of-type {
+table.ranking tr.regio td:first-of-type,
+table.ranking tr.regio td:last-of-type {
     text-align: center;
 }
 
+table.ranking tr.detail {
+    display: none;
+}
+
+table.ranking tr.detail.header {
+    font-weight: bold;
+}
+
 table.ranking tr.detail td {
+    width: 15%;
     text-align: center;
 }
+
 table.ranking tr.detail td:first-of-type {
     text-align: left;
 }
@@ -45,7 +60,7 @@ table.ranking tbody tr.detail {
     font-size: 16pt;
 }
 
-table.ranking tbody tr.colored {
+table.ranking tbody tr.regio {
     font-size: 24pt;
     font-weight: bold;
 }
@@ -59,26 +74,26 @@ table.ranking tbody tr.colored {
 
 
 
-table.ranking .colored.blue {
+table.ranking .regio.blue {
     background-color: blue;
     color: white;
 }
 
-table.ranking .colored.red {
+table.ranking .regio.red {
     background-color: red;
     color: white;
 }
 
-table.ranking .colored.yellow {
+table.ranking .regio.yellow {
     background-color: yellow;
 }
 
-table.ranking .colored.green {
+table.ranking .regio.green {
     background-color: green;
     color: white;
 }
 
-table.ranking .colored.orange {
+table.ranking .regio.orange {
     background-color: orange;
 }
 

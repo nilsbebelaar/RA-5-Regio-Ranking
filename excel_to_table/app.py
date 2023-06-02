@@ -101,7 +101,7 @@ ranking = {
 ranking = dict(sorted(ranking.items(), key=lambda x: x[1]['rank']))
 
 output = template.render(ranking=ranking, time=datetime.now().strftime("%d-%m-%Y %H:%M"))
-output = minify_html(output)
+output = minify_html(output, keep_closing_tags=True,)
 
 load_dotenv()
 env = Env()

@@ -1,28 +1,28 @@
 <table class="ranking">
   <thead>
     <tr>
-      <th>Rank</th>
-      <th colspan="2">Naam</th>
+      <th>Plek</th>
+      <th colspan="3">Regio</th>
       <th colspan="2">Punten</th>
-    </tr>
-    <tr>
-      <th></th>
-      <th>Man.</th>
-      <th>Vrw.</th>
-      <th>Est.</th>
-      <th>Tot.</th>
     </tr>
   </thead>
   <tbody>
     {% for naam, regio in ranking.items() %}
-    <tr class="colored {{regio.color}}">
+    <tr class="regio {{regio.color}}" onclick=toggleRows('{{regio.color}}')>
       <td>{{regio.rank}}</td>
-      <td colspan="2">{{naam}}</td>
+      <td colspan="3">{{naam}}</td>
       <td colspan="2">{{regio.punten}}</td>
+    </tr>
+    <tr class="detail header {{regio.color}}">
+      <td colspan="2"></td>
+      <td>Man.</td>
+      <td>Vrw.</td>
+      <td>Est.</td>
+      <td>Tot.</td>
     </tr>
     {% for d in regio.details %}
     <tr class="detail {{regio.color}}">
-      <td>{{d.naam}}</td>
+      <td colspan="2">{{d.naam}}</td>
       <td>{% if d.get('Mannen') is not none %}{{d.Mannen}}{% endif %}</td>
       <td>{% if d.get('Vrouwen') is not none %}{{d.Vrouwen}}{% endif %}</td>
       <td>{% if d.get('Estafette') is not none %}{{d.Estafette}}{% endif %}</td>
