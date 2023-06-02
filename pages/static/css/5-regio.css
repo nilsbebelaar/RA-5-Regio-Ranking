@@ -1,0 +1,42 @@
+body {
+    font-size: 20pt;
+    font-family: Ubuntu, "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+}
+
+.title {
+    font-size: 2em;
+    margin: 5px;
+}
+.subtitle{
+    font-size: 1.5em;
+    margin: 5px;
+}
+
+table.ranking{
+    width: 100%;
+    font-size: 1.5em;
+    border:none
+}
+
+table.ranking th{
+    text-align: left;
+}
+
+table.ranking .colored.blue{
+    background-color: blue;
+    color: white;
+}
+table.ranking .colored.red{
+    background-color: red;
+    color: white;
+}
+table.ranking .colored.yellow{
+    background-color: yellow;
+}
+table.ranking .colored.green{
+    background-color: green;
+    color: white;
+}
+table.ranking .colored.orange{
+    background-color: orange;
+}
